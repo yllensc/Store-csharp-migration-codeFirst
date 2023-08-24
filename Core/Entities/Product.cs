@@ -9,11 +9,13 @@ namespace Core.Entities
     {
         public int Id { get; set; }
         public string ? InternalCode { get; set; }
-        public string ? Name { get; set; }
+        public string ? NameProduct { get; set; }
         public int StockMin { get; set; }
         public int StockMax { get; set; }
         public int Stock { get; set; }
         public double TotalPrice { get; set; }
+        public ICollection<ProductPerson> ? ProductPersons { get; set;}
+        public ICollection<Person> Persons { get; set;} = new HashSet<Person>();
 
     }
 }
