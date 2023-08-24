@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Data.Configuration;
 
-    public class PersonTypeConfiguration : IEntityTypeConfiguration<PersonType>
+public class PersonTypeConfiguration : IEntityTypeConfiguration<PersonType>
 {
     public void Configure(EntityTypeBuilder<PersonType> builder)
     {
@@ -13,6 +13,8 @@ namespace Infrastructure.Data.Configuration;
         builder.Property(p => p.Description)
             .IsRequired()
             .HasMaxLength(100);
+        builder.HasIndex(p => p.Description)
+            .IsUnique();
     }
-        
-    }
+
+}

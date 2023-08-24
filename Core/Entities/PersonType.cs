@@ -5,11 +5,9 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class PersonType
+    public class PersonType : BaseEntity
     {
-        public int Id { get; set; }
-        public string ? Description { get; set; }
-
-        public ICollection<Person> ? Persons { get; set; }
+        public string? Description { get; set; }
+        public ICollection<Person>? Persons { get; set; }
     }
 }

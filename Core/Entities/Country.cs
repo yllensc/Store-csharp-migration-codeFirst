@@ -5,11 +5,9 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class Country
+    public class Country : BaseEntity
     {
-        public int Id { get; set; }
-        public string ? NameCountry { get; set; }
-
-        public ICollection<State> ? States { get; set; }
+        public string? NameCountry { get; set; }
+        public ICollection<State>? States { get; set; }
     }
 }
