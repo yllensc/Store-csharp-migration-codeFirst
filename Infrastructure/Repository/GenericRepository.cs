@@ -1,15 +1,20 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Interfaces;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository
 {
-  public class GenericRepository<T> : IGenericRepo<T> where T : BaseEntity
+  public class GenericRepository<T> : IGenericDemo<T> where T : BaseEntity
   {
-    private readonly InventarioContext _context;
+    private readonly StoreContext _context;
   
-    public GenericRepository(InventarioContext context)
+    public GenericRepository(StoreContext context)
     {
         _context = context;
     }
@@ -28,8 +33,9 @@ namespace Infrastructure.Repository
     {
         return _context.Set<T>().Where(expression);
     }
-  
-    public virtual async Task<IEnumerable<T>> GetAllAsync()
+
+
+        public virtual async Task<IEnumerable<T>> GetAllAsync()
     {
         return await _context.Set<T>().ToListAsync();
     }

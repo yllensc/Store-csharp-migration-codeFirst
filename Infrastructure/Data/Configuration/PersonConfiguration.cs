@@ -35,20 +35,22 @@ public class PersonConfiguration : IEntityTypeConfiguration<Person>
 
         builder
         .HasMany(p => p.Products)
-        .WithMany(p => p.Persons)
-        .UsingEntity<ProductPerson>(
-            j => j
-                .HasOne(pt => pt.Product)
-                .WithMany(t => t.ProductPersons)
-                .HasForeignKey(pt => pt.IdProductFK),
-            j => j
-                .HasOne(pt => pt.Person)
-                .WithMany(t => t.ProductPersons)
-                .HasForeignKey(pt => pt.IdPersonFK),
-            j =>
-            {
-                j.HasKey(t => new { t.IdPersonFK, t.IdProductFK });
-            });
+        .WithMany(p => p.Persons);
+        //.UsingEntity<ProductPerson>(
+        //    j => j
+        //        .HasOne(pt => pt.Product)
+        //        .WithMany(t => t.ProductPersons)
+        //        .HasForeignKey(pt => pt.IdProductFK),
+        //    j => j
+        //        .HasOne(pt => pt.Person)
+        //        .WithMany(t => t.ProductPersons)
+        //        .HasForeignKey(pt => pt.IdPersonFK),
+        //    j =>
+        //    {
+        //        j.HasKey(t => new { t.IdPersonFK, t.IdProductFK });
+        //    });
+
+        
     }
 
 }
