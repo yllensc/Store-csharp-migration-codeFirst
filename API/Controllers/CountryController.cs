@@ -12,7 +12,7 @@ namespace API.Controllers
         this.unitOfWork = _unitOfWork;
     }
     
-    //Definicion HTTP Get
+    //Definiciones HTTP 
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -30,5 +30,19 @@ namespace API.Controllers
         var country = await unitOfWork.Countries.GetByIdAsync(id);
         return Ok(country);
     }
+
+    [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task <ActionResult<Country>> Post(Country country)
+        {
+            unitOfWork.Countries.Add(country);
+            await unitOfWork.SaveAsync();
+            if(country == null)
+            {
+                return BadRequest();
+            }
+            return CreatedAtAction(nameof(Post), new {id = country.Id}, country);
+        }
     }
 }
