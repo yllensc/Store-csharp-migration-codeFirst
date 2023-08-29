@@ -1,13 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using Infrastructure.Data;
 using API.Extensions;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddAplicationServices();
 builder.Services.ConfigureCors();
+builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 builder.Services.AddDbContext<StoreContext>(optionsBuilder =>
 {
 string ? connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
