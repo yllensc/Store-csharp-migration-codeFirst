@@ -1,36 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\API\\API.csproj": {}
+    "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj": {}
   },
   "projects": {
-    "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\API\\API.csproj": {
+    "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\API\\obj\\",
+        "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\APT01-61\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\APT01-61\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.307\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -45,6 +42,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -87,28 +88,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Core\\Core.csproj": {
+    "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Core\\obj\\",
+        "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\APT01-61\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\APT01-61\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -148,36 +147,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\APT01-61\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\APT01-61\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Core\\Core.csproj": {
-                "projectPath": "d:\\DATOS DE USUARIO\\Documents\\Campus\\c#\\Store-csharp-migration-codeFirst\\Core\\Core.csproj"
+              "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj"
               }
             }
           }
@@ -217,7 +214,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

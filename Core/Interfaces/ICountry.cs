@@ -8,7 +8,6 @@ namespace Core.Interfaces
 {
     public interface ICountry : IGenericDemo<Country>
     {
-        Task ToListAsync();
     }
     
 }

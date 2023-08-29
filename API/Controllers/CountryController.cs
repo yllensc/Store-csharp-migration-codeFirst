@@ -1,3 +1,5 @@
+using API.Dtos;
+using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -7,28 +9,35 @@ namespace API.Controllers
     public class CountryController : BaseApiController
     {
         private readonly IUnitOfWork unitOfWork;
-    public CountryController(IUnitOfWork _unitOfWork)
+        private readonly IMapper mapper;
+    public CountryController(IUnitOfWork _unitOfWork, IMapper _mapper)
     {
         this.unitOfWork = _unitOfWork;
+        this.mapper = _mapper;
     }
     
     //Definiciones HTTP 
+    //Get con DTO
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<IEnumerable<Country>>> Get()
+    public async Task<ActionResult<IEnumerable<CountryDto>>> Get()
     {
         var countries = await unitOfWork.Countries.GetAllAsync();
-        return Ok(countries);
+        return mapper.Map<List<CountryDto>>(countries);
     }
 
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult> Get(int id)
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<CountryDto>> Get(int id)
     {
         var country = await unitOfWork.Countries.GetByIdAsync(id);
-        return Ok(country);
+        if (country == null){
+            return NotFound();
+        }
+        return this.mapper.Map<CountryDto>(country);    
     }
 
     [HttpPost]

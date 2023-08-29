@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository
 {
-    public class CountryRepository : GenericRepository<Country>
+    public class CountryRepository : GenericRepository<Country>, ICountry
     {
         private readonly StoreContext _context;
 

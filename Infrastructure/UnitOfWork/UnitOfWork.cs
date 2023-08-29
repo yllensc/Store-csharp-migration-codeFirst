@@ -23,7 +23,7 @@ namespace Infrastructure.UnitOfWork
                 {
                     _countries = new CountryRepository(context);
                 }
-                return (ICountry)_countries;
+                return _countries;
             }
         }
 
