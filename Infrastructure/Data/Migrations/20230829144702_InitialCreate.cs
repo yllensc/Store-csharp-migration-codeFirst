@@ -92,7 +92,7 @@ namespace Infrastructure.Data.Migrations
                 name: "Region",
                 columns: table => new
                 {
-                    IdRegion = table.Column<int>(type: "int", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     RegionName = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -100,7 +100,7 @@ namespace Infrastructure.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Region", x => x.IdRegion);
+                    table.PrimaryKey("PK_Region", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Region_State_IdStateFK",
                         column: x => x.IdStateFK,
@@ -116,7 +116,7 @@ namespace Infrastructure.Data.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    IdPerson = table.Column<string>(type: "longtext", nullable: true)
+                    IdPerson = table.Column<string>(type: "varchar(11)", maxLength: 11, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     NamePerson = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -138,7 +138,32 @@ namespace Infrastructure.Data.Migrations
                         name: "FK_Person_Region_IdRegionFk",
                         column: x => x.IdRegionFk,
                         principalTable: "Region",
-                        principalColumn: "IdRegion",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "PersonProduct",
+                columns: table => new
+                {
+                    PersonsId = table.Column<int>(type: "int", nullable: false),
+                    ProductsId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PersonProduct", x => new { x.PersonsId, x.ProductsId });
+                    table.ForeignKey(
+                        name: "FK_PersonProduct_Person_PersonsId",
+                        column: x => x.PersonsId,
+                        principalTable: "Person",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PersonProduct_Product_ProductsId",
+                        column: x => x.ProductsId,
+                        principalTable: "Product",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
@@ -148,25 +173,38 @@ namespace Infrastructure.Data.Migrations
                 columns: table => new
                 {
                     IdProductFK = table.Column<int>(type: "int", nullable: false),
-                    IdPersonFK = table.Column<int>(type: "int", nullable: false)
+                    IdPersonFK = table.Column<int>(type: "int", nullable: false),
+                    ProductId = table.Column<int>(type: "int", nullable: true),
+                    PersonId = table.Column<int>(type: "int", nullable: true),
+                    Id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductPeople", x => new { x.IdPersonFK, x.IdProductFK });
+                    table.PrimaryKey("PK_ProductPeople", x => new { x.IdProductFK, x.IdPersonFK });
                     table.ForeignKey(
-                        name: "FK_ProductPeople_Person_IdPersonFK",
-                        column: x => x.IdPersonFK,
+                        name: "FK_ProductPeople_Person_PersonId",
+                        column: x => x.PersonId,
                         principalTable: "Person",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_ProductPeople_Product_IdProductFK",
-                        column: x => x.IdProductFK,
+                        name: "FK_ProductPeople_Product_ProductId",
+                        column: x => x.ProductId,
                         principalTable: "Product",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Country_NameCountry",
+                table: "Country",
+                column: "NameCountry",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Person_IdPerson",
+                table: "Person",
+                column: "IdPerson",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Person_IdPersonTypeFk",
@@ -179,15 +217,31 @@ namespace Infrastructure.Data.Migrations
                 column: "IdRegionFk");
 
             migrationBuilder.CreateIndex(
+                name: "IX_PersonProduct_ProductsId",
+                table: "PersonProduct",
+                column: "ProductsId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PersonType_Description",
+                table: "PersonType",
+                column: "Description",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Product_InternalCode",
                 table: "Product",
                 column: "InternalCode",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProductPeople_IdProductFK",
+                name: "IX_ProductPeople_PersonId",
                 table: "ProductPeople",
-                column: "IdProductFK");
+                column: "PersonId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductPeople_ProductId",
+                table: "ProductPeople",
+                column: "ProductId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Region_IdStateFK",
@@ -195,14 +249,29 @@ namespace Infrastructure.Data.Migrations
                 column: "IdStateFK");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Region_RegionName",
+                table: "Region",
+                column: "RegionName",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_State_IdCountryFK",
                 table: "State",
                 column: "IdCountryFK");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_State_NameState",
+                table: "State",
+                column: "NameState",
+                unique: true);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "PersonProduct");
+
             migrationBuilder.DropTable(
                 name: "ProductPeople");
 

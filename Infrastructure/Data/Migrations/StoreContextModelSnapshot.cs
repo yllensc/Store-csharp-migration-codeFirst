@@ -32,6 +32,9 @@ namespace Infrastructure.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("NameCountry")
+                        .IsUnique();
+
                     b.ToTable("Country", (string)null);
                 });
 
@@ -45,7 +48,9 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("IdPerson")
-                        .HasColumnType("longtext");
+                        .IsRequired()
+                        .HasMaxLength(11)
+                        .HasColumnType("varchar(11)");
 
                     b.Property<int>("IdPersonTypeFk")
                         .HasColumnType("int");
@@ -62,6 +67,9 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IdPerson")
+                        .IsUnique();
 
                     b.HasIndex("IdPersonTypeFk");
 
@@ -82,6 +90,9 @@ namespace Infrastructure.Data.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Description")
+                        .IsUnique();
 
                     b.ToTable("PersonType", (string)null);
                 });
@@ -128,22 +139,33 @@ namespace Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Core.Entities.ProductPerson", b =>
                 {
-                    b.Property<int>("IdPersonFK")
-                        .HasColumnType("int");
-
                     b.Property<int>("IdProductFK")
                         .HasColumnType("int");
 
-                    b.HasKey("IdPersonFK", "IdProductFK");
+                    b.Property<int>("IdPersonFK")
+                        .HasColumnType("int");
 
-                    b.HasIndex("IdProductFK");
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("PersonId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdProductFK", "IdPersonFK");
+
+                    b.HasIndex("PersonId");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("ProductPeople");
                 });
 
             modelBuilder.Entity("Core.Entities.Region", b =>
                 {
-                    b.Property<int>("IdRegion")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
@@ -155,9 +177,12 @@ namespace Infrastructure.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
-                    b.HasKey("IdRegion");
+                    b.HasKey("Id");
 
                     b.HasIndex("IdStateFK");
+
+                    b.HasIndex("RegionName")
+                        .IsUnique();
 
                     b.ToTable("Region", (string)null);
                 });
@@ -180,7 +205,25 @@ namespace Infrastructure.Data.Migrations
 
                     b.HasIndex("IdCountryFK");
 
+                    b.HasIndex("NameState")
+                        .IsUnique();
+
                     b.ToTable("State", (string)null);
+                });
+
+            modelBuilder.Entity("PersonProduct", b =>
+                {
+                    b.Property<int>("PersonsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PersonsId", "ProductsId");
+
+                    b.HasIndex("ProductsId");
+
+                    b.ToTable("PersonProduct");
                 });
 
             modelBuilder.Entity("Core.Entities.Person", b =>
@@ -206,15 +249,11 @@ namespace Infrastructure.Data.Migrations
                 {
                     b.HasOne("Core.Entities.Person", "Person")
                         .WithMany("ProductPersons")
-                        .HasForeignKey("IdPersonFK")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PersonId");
 
                     b.HasOne("Core.Entities.Product", "Product")
                         .WithMany("ProductPersons")
-                        .HasForeignKey("IdProductFK")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ProductId");
 
                     b.Navigation("Person");
 
@@ -241,6 +280,21 @@ namespace Infrastructure.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Country");
+                });
+
+            modelBuilder.Entity("PersonProduct", b =>
+                {
+                    b.HasOne("Core.Entities.Person", null)
+                        .WithMany()
+                        .HasForeignKey("PersonsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Core.Entities.Product", null)
+                        .WithMany()
+                        .HasForeignKey("ProductsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Core.Entities.Country", b =>

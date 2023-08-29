@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository
 {
-    public class CountryRepository : GenericRepository<Country>, ICountry
+    public class CountryRepository : GenericRepository<Country>
     {
         private readonly StoreContext _context;
 
@@ -27,5 +27,7 @@ namespace Infrastructure.Repository
         .Include(p => p.States)
         .FirstOrDefaultAsync(p => p.Id == id);
     }
+
+        
     }
 }

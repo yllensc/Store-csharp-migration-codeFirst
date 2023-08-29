@@ -10,3 +10,15 @@
 /home/apolT01-061/Documents/proWebApisYS/Store-csharp-migration-codeFirst/Core/obj/Debug/net7.0/refint/Core.dll
 /home/apolT01-061/Documents/proWebApisYS/Store-csharp-migration-codeFirst/Core/obj/Debug/net7.0/Core.pdb
 /home/apolT01-061/Documents/proWebApisYS/Store-csharp-migration-codeFirst/Core/obj/Debug/net7.0/ref/Core.dll
+d:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\bin\Debug\net7.0\Core.deps.json
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\bin\Debug\net7.0\Core.dll
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\bin\Debug\net7.0\Core.pdb
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\obj\Debug\net7.0\Core.csproj.AssemblyReference.cache
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\obj\Debug\net7.0\Core.dll
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\obj\Debug\net7.0\refint\Core.dll
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\obj\Debug\net7.0\Core.pdb
+d:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Core\obj\Debug\net7.0\ref\Core.dll

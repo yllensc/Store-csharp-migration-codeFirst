@@ -11,5 +11,7 @@ namespace API.Controllers
     public class BaseApiController : ControllerBase
     {
         
+           //"DefaultConnection":"server=192.168.128.209;user=apolo;password=Apo1oC@mp3r;database=storeYS"
+ 
     }
 }

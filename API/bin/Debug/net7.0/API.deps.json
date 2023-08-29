@@ -12,6 +12,7 @@
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Design": "7.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {

@@ -13,3 +13,18 @@
 /home/apolT01-061/Documents/proWebApisYS/Store-csharp-migration-codeFirst/Infrastructure/obj/Debug/net7.0/refint/Infrastructure.dll
 /home/apolT01-061/Documents/proWebApisYS/Store-csharp-migration-codeFirst/Infrastructure/obj/Debug/net7.0/Infrastructure.pdb
 /home/apolT01-061/Documents/proWebApisYS/Store-csharp-migration-codeFirst/Infrastructure/obj/Debug/net7.0/ref/Infrastructure.dll
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\bin\Debug\net7.0\Infrastructure.deps.json
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\bin\Debug\net7.0\Infrastructure.dll
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\bin\Debug\net7.0\Infrastructure.pdb
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\bin\Debug\net7.0\Core.dll
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\bin\Debug\net7.0\Core.pdb
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.AssemblyReference.cache
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfoInputs.cache
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfo.cs
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CopyComplete
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\Infrastructure.dll
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
+D:\DATOS DE USUARIO\Documents\Campus\c#\Store-csharp-migration-codeFirst\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
