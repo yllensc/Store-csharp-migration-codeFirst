@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sQi+4Qr9mEaRjFVyvZIO2QWsYYylS8MtbGOnUKSbrDpdImeuq0ihPYSUe/LLWuEa9P5R+Y7+2xI7ow2vbvHWPQ==",
+  "dgSpecHash": "chvADfZ6FiPt0AhhEH6F8pCDYA1zIn4WfxnGG7oL3uVEX/S9QrIgQ5FvA6uqo7OnCL9JhbRIIG/hUYWEjvmANw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\APT01-61\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\APT01-61\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",

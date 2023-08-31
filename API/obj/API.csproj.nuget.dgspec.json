@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj": {}
+    "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj": {
+    "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj",
+        "projectPath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj",
         "packagesPath": "C:\\Users\\APT01-61\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\obj\\",
+        "outputPath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-61\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj"
+              "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -92,14 +92,14 @@
         }
       }
     },
-    "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj": {
+    "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj",
+        "projectUniqueName": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj",
+        "projectPath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\APT01-61\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\obj\\",
+        "outputPath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-61\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -151,14 +151,14 @@
         }
       }
     },
-    "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj": {
+    "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\APT01-61\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-61\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -173,8 +173,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj"
+              "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj": {
+                "projectPath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\Core\\Core.csproj"
               }
             }
           }

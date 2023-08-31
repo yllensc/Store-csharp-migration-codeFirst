@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hgPjzCWqi18IqPkap/8fAqAj7cDfg+kLxHKUqz5nwHoiftMlYxDdPNWA6uuWFYwucjJ0uiMwlu7RBDDP0GiJqA==",
+  "dgSpecHash": "a9g73UxXeS+kMXZ21d2CrWiFZb6xKWwAqh+UbIdwKCN6MTgSErax6PZhwwhupG8uJggwBqQz8S2IcUzXhDLNSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj",
+  "projectFilePath": "c:\\Users\\APT01-61\\Documents\\projectsWebApiYS\\Store-csharp-migration-codeFirst\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\APT01-61\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\APT01-61\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
